@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
             $table->string('barrio',60);
 
             $table->primary('id_user');
-            $table->foreign('id_rol')->references('id_rol')->on('rol');
+            $table->foreign('id_rol')->references('id')->on('rols');
                 
         });
     }
